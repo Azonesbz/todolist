@@ -13,7 +13,4 @@ btnAddTask.addEventListener('click', () => {
     const btnFinish = document.createElement('button')
     const newTask = tableTask.appendChild(tr)
     newTask.appendChild(btnDelete, btnEdit, btnSave, btnFinish)
-
-
-
 })
