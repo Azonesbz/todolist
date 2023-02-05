@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <script src="./app.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="w-full fixed p-6 mx-auto bg-white shadow-lg flex items-center space-x-4">
+        <h1 class="m-auto">ToDolist</h1>
+    </div>
+    <table class="my-auto mx-auto">
+        <thead>
+            <tr>
+                <th class="border-4 border-black p-5">ID</th>
+                <th class="border-4 border-black p-5">Mes tâches</th>
+            </tr>
+        </thead>
+        <tbody id="table-task">
+            <tr class="">
+                <td colspan="2" class="border-4 border-black p-5">
+                    <input id="input-task-value" type="text" placeholder="Ajouter une tâche" class="px-3 py-2 border-2 border-black rounded-xl">
+                    <button id="btn-add-task" class="px-3 py-2 border-2 rounded-xl border-black hover:bg-black hover:text-white duration-200 active:scale-90">Ajouter</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
